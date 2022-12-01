@@ -1,0 +1,8 @@
+    #search_dir=/the/path/to/base/dir/
+    IFS=$'\n' #for in $() splits based on IFS
+    search_dir="$(pwd)"
+    for entry in $(ls $search_dir)
+    do
+        echo $entry
+    done
+
